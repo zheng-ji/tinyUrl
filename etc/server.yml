@@ -1,0 +1,25 @@
+# 监听的IP,监听的端口
+bind: "0.0.0.0:7777"
+monitaddr: "0.0.0.0:8999"
+rpcaddr: "0.0.0.0:9999"
+
+kafka:
+    broker_list:
+        - "172.16.1.230:9092"
+    flush_time: 5
+
+logcfg:
+    level: "info"
+    runlog: "/tmp/adrouter-runlog"
+
+redis:
+    addr: "127.0.0.1:6379"
+    db: 4
+
+# mysql
+mysql:
+  name: mysql
+  connection: root:KeepOn@tcp(172.16.1.30:3306)/scene_ad
+  max_idle_connections: 100
+
+hostname: "www.abc.com"
