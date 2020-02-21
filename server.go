@@ -46,7 +46,7 @@ func main() {
 
 	// DB Connection
 	global.InitDBConnection()
-	defer global.GDb.Close()
+	defer global.GDB.Close()
 
 	router.InitRouter()
 	svr := &http.Server{
